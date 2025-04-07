@@ -51,27 +51,50 @@
       color: var(--black);
     }
 
-    nav {
-      background: rgba(0, 0, 0, 0.8);
-      text-align: center;
-      padding: 1rem 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(4px);
-    }
+/* Style for the navigation */
+nav {
+  display: flex;
+  justify-content: center;  /* Center align the items */
+  flex-wrap: wrap;           /* Allow wrapping of items on smaller screens */
+  gap: 20px;                 /* Add spacing between items */
+  background-color: #333;    /* Background color for the navigation */
+  padding: 10px 0;           /* Top and bottom padding */
+}
 
-    nav a {
-      color: var(--gold);
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-    }
+nav a {
+  color: #fff;              /* White text color */
+  text-decoration: none;     /* Remove underline from links */
+  font-size: 18px;           /* Set font size */
+  font-weight: bold;         /* Make text bold */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
 
-    nav a:hover {
-      color: var(--green);
-    }
+nav a:hover {
+  color: #f39c12;            /* Change color on hover */
+}
+
+/* Media Query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-around; /* Align items more evenly for smaller screens */
+    padding: 5px 0;                /* Adjust padding */
+  }
+
+  nav a {
+    font-size: 16px;               /* Adjust font size for small screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 5px;                  /* Adjust padding for even smaller screens */
+  }
+
+  nav a {
+    font-size: 14px;               /* Adjust font size for very small screens */
+    padding: 5px 0;                /* Add padding for clickable areas */
+  }
+}
 	section {
       padding: 2rem;
       max-width: 800px;
