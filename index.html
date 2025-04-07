@@ -53,46 +53,59 @@
 
 /* Style for the navigation */
 nav {
+  position: relative;
+  background-color: #333;
+  padding: 10px;
+}
+
+nav .menu-toggle {
+  display: none;  /* Hide the toggle button by default */
+  font-size: 30px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav .nav-links {
   display: flex;
-  justify-content: center;  /* Center align the items */
-  flex-wrap: wrap;           /* Allow wrapping of items on smaller screens */
-  gap: 20px;                 /* Add spacing between items */
-  background-color: #333;    /* Background color for the navigation */
-  padding: 10px 0;           /* Top and bottom padding */
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
 }
 
 nav a {
-  color: #fff;              /* White text color */
-  text-decoration: none;     /* Remove underline from links */
-  font-size: 18px;           /* Set font size */
-  font-weight: bold;         /* Make text bold */
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #f39c12;            /* Change color on hover */
+  color: #f39c12;
 }
 
-/* Media Query for smaller screens (e.g., mobile devices) */
+/* Media Query for small screens (e.g., mobile) */
 @media screen and (max-width: 768px) {
-  nav {
-    justify-content: space-around; /* Align items more evenly for smaller screens */
-    padding: 5px 0;                /* Adjust padding */
+  .menu-toggle {
+    display: block;  /* Show the toggle button on small screens */
+  }
+
+  .nav-links {
+    display: none;   /* Hide the navigation links by default */
+    flex-direction: column; /* Stack the links vertically */
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;    /* Show the links when the menu is active */
   }
 
   nav a {
-    font-size: 16px;               /* Adjust font size for small screens */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  nav {
-    padding: 5px;                  /* Adjust padding for even smaller screens */
-  }
-
-  nav a {
-    font-size: 14px;               /* Adjust font size for very small screens */
-    padding: 5px 0;                /* Add padding for clickable areas */
+    font-size: 16px;
+    padding: 10px;
   }
 }
 	section {
@@ -242,14 +255,17 @@ nav a:hover {
 
   </header>
 
-  <nav>
+<nav>
+  <button class="menu-toggle" id="menu-toggle">=</button>
+  <div class="nav-links" id="nav-links">
     <a href="#story">Our Story</a>
     <a href="#countdown">Countdown</a>
     <a href="#details">Wedding Details</a>
     <a href="#accommodation">Accommodation</a>
     <a href="#gallery">Gallery</a>
     <a href="#rsvp">RSVP</a>
-  </nav>
+  </div>
+</nav>
 
   <section id="story">
     <h2>Our Story</h2>
