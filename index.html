@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Onke & Siyanda's Wedding</title>
+  <style>
+    :root {
+      --gold: #d4af37;
+      --black: #111;
+      --white: #ffffff;
+      --green: #3b7a57; /* Sage Green */
+      --champagne: #f7e7ce; /* Champagne */
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: url('5.png') repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('3.png') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      color: var(--white);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--gold);
+      text-shadow: 2px 2px 4px var(--black);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--black);
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(4px);
+    }
+
+    nav a {
+      color: var(--gold);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: var(--green);
+    }
+	section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.92); /* semi-transparent white */
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      color: var(--green);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 0.5rem;
+    }
+
+    #timer {
+      font-size: 1.8rem;
+      color: var(--green);
+      text-align: center;
+      margin: 1.5rem 0;
+      font-weight: bolder; /* Added bold styling */
+    }
+
+    .gallery img {
+      width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      border: 3px solid var(--gold);
+    }
+
+    footer {
+      background: var(--black);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: var(--white);
+    }
+
+    .rsvp-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: var(--gold);
+      color: var(--black);
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    .rsvp-button:hover {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    h3 {
+      margin-top: 1rem;
+      color: var(--gold);
+    }
+
+    a {
+      color: var(--gold);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 1rem;
+		color: var(--black);
+		padding: 1rem;
+		font-style: italic;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0.5rem;
+        font-size: 0.95rem;
+      }
+
+      section {
+        padding: 1.2rem;
+      }
+
+      #timer {
+        font-size: 1.3rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 1rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .rsvp-button {
+        width: 100%;
+        padding: 1rem;
+      }
+    }
+
+    /* Style for the quote */
+    .quote {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: var(--white);
+      padding: 1rem;
+      font-style: italic;
+      font-size: 1rem;
+      border-radius: 10px;
+      box-shadow: rgba(213, 175, 55, 0.7);
+      max-width: 300px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1> Welcome to the wedding</h1>
+    <h1>O & S </h1>
+    <p style="font-weight: bold; color: var(--green);font-style: italic;">"We found our happily ever after, and we want you to be a part of it".</p>
+	<h1>Onke Msutu & Siyanda Nyakeni</h1>
+	    <p style="font-weight: bold; color: var(--green);font-style: italic;"><strong>Date:</strong> Saturday, 31st MAY 2025</p>
+
+  </header>
+
+  <nav>
+    <a href="#story">Our Story</a>
+    <a href="#countdown">Countdown</a>
+    <a href="#details">Wedding Details</a>
+    <a href="#accommodation">Accommodation</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#rsvp">RSVP</a>
+  </nav>
+
+  <section id="story">
+    <h2>Our Story</h2>
+    <p>Our love story began in the most unexpected way, and since then it's blossomed into something beautiful. Onke and Siyanda are now ready to tie the knot and can’t wait to celebrate with you.</p>
+  </section>
+
+  <section id="countdown">
+    <h2>Countdown to the Big Day</h2>
+    <div id="timer" class="rsvp-button">Loading...</div>
+    <script>
+      const weddingDate = new Date("2025-05-31T15:00:00").getTime();
+      const timer = document.getElementById("timer");
+
+      setInterval(() => {
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+        if (distance < 0) {
+          timer.innerHTML = "We're Married!";
+        }
+      }, 1000);
+    </script>
+  </section>
+
+  <section id="details">
+<section id="details">
+  <h2>Wedding Details</h2>
+  <p><strong>Date:</strong> Saturday, 31st MAY 2025</p>
+  <p><strong>Arrival Time:</strong> 08:30 AM</p>
+  <p><strong>Ceremony Start:</strong> 09:30 AM</p>
+  <p><strong>Venue:</strong> Dan's Country Lodge</p>
+  <p><strong>Dress Code:</strong> 
+    <span style="color:#B2AC88;">SAGE GREEN</span> | 
+    <span style="color:#FFD700;">GOLD</span> | 
+    <span style="color:#F7E7CE;">CHAMPAGNE</span> | 
+    <span style="color:#FFFFFF; background-color:#000;">WHITE</span>
+	    <div class="gallery">
+      <img src="6.jpeg" alt="Siyanda">
+    </div>
+  </p>
+  </section>
+
+  <section id="accommodation">
+    <h2>Near by Accommodation</h2>
+    <p>For your convenience, we've curated a list of nearby accommodations. Explore these options to ensure a comfortable stay during our wedding festivities. Your presence is a gift, and we want you to enjoy every moment of this joyous occasion.</p>
+
+    <h3>Dans's Country Lodge</h3>
+    <p><strong>Address:</strong> N2 Highway Road to Durban 22km from Mthatha. After booking, all of the property’s details, including telephone and address, are provided in your booking confirmation and your account.
+</p>
+    <p><strong>Booking link:</strong><a  href="https://danscountrylodge.co.za" target="_blank" style="font-weight: bolder; font-size: 0.7rem;">BOOK NOW</a></p>
+
+    <div class="gallery">
+      <img src="acc.png" alt="Siyanda">
+    </div>
+	    <h3>White House Lodge</h3>
+    <p><strong>Address:</strong> 39 John Beer Drive 39 John Beer Dr, Northcrest, Mthatha, 5099 Mthatha, South Africa. After booking, all of the property’s details, including telephone and address, are provided in your booking confirmation and your account.</p>
+    <p><strong>Booking link:</strong><a href="https://www.booking.com/hotel/za/white-house-lodge-mthatha.en-gb.html?aid=2378099&label=olr-bing%3A2c76e7c3a783150687ef803783a5f55c&sid=7f216a6d5c5393e2772e395c2f150736&checkin=2025-04-14&checkout=2025-04-15&dest_id=-1294364&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&soh=1&sr_order=popularity&srepoch=1744053552&srpvid=ce398760551201ea&type=total&ucfs=1&#no_availability_msg" target="_blank" style="font-weight: bolder; font-size: 0.7rem;">BOOK NOW</a></p>
+
+    <div class="gallery">
+      <img src="acc2.png" alt="Siyanda">
+    </div>
+	    <h3>Big Five Guest House</h3>
+  <p><strong>Address:</strong>27 Atwell Madala Street, Northcrest, 5099 Mthatha, South Africa. After booking, all of the property’s details, including telephone and address, are provided in your booking confirmation and your account.
+</p>
+
+    <div class="gallery">
+      <img src="acc1.png" alt="Siyanda">
+    </div>
+	    <h3>Elam Guest House</h3>
+    <p><strong>Address:</strong> 40 Nombembe Street, 5099 Mthatha, South Africa. After booking, all of the property’s details, including telephone and address, are provided in your booking confirmation and your account.
+</p>
+    <p><strong>Booking link:</strong><a  href="https://www.booking.com/hotel/za/elam-guest-house.en-gb.html?label=olr-bing%3A2c76e7c3a783150687ef803783a5f55c&sid=7f216a6d5c5393e2772e395c2f150736&aid=2378099" target="_blank" style="font-weight: bolder; font-size: 0.7rem;">BOOK NOW</a></p>
+
+    <div class="gallery">
+      <img src="acc3.png" alt="Siyanda">
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="mbabe4.jpeg" alt="Siyanda">
+      <img src="wanga.jpeg" alt="Onke">
+    </div>
+  </section>
+
+  <section id="rsvp">
+    <h2 style="font-weight: bold; color: var(--gold);">RSVP</h2>
+    <p style="font-weight: bold; color: var(--green);font-style: italic;">We're thrilled to share our special day with you! Kindly RSVP by 24th MAY 2025:</p>
+    <a class="rsvp-button" href="https://wa.me/27780219186" target="_blank" style="font-weight: bolder; font-size: 1.2rem;">RSVP Now to MS S.MSUTU</a>   
+   <a class="rsvp-button" href="https://wa.me/27734320496" target="_blank" style="font-weight: bolder; font-size: 1.2rem;">RSVP Now to MRS N.NYAKENI</a>
+  </section>
+
+  <footer>
+    <p>With all our love, Onke & Siyanda | ©️ 2025</p>
+  </footer>
+
+  <!-- Bible Verse Quote at the bottom right -->
+  <div class="quote">
+    <p><strong>Matthew 19:5–6:</strong> 5 and said, ‘Therefore a man shall leave his father and his mother and hold fast to his wife, and the two shall become one flesh’? 6 So they are no longer two but one flesh. What therefore God has joined together, let not man separate.”</p>
+  </div>
+
+</body>
+</html> 
