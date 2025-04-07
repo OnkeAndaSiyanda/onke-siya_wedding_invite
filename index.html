@@ -227,26 +227,57 @@ nav a:hover {
       }
     }
 
-    /* Style for the quote */
-    .quote {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: var(--white);
-      padding: 1rem;
-      font-style: italic;
-      font-size: 1rem;
-      border-radius: 10px;
-      box-shadow: rgba(213, 175, 55, 0.7);
-      max-width: 300px;
-    }
+/* Quote container positioning */
+.quote-container {
+  position: absolute;
+  top: 10%;  /* Adjust this as needed to place the quote on the welcome page */
+  right: 5%;
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight transparent background */
+  border-radius: 5px;
+}
+
+.quote {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  line-height: 1.5;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .quote-container {
+    font-size: 14px;
+    bottom: 10px;  /* Position at bottom right for small screens */
+    top: auto;     /* Remove top positioning for small screens */
+    right: 10px;
+  }
+
+  .quote {
+    font-size: 12px;
+    text-align: right;
+    padding: 5px;
+  }
+}
+
+/* Positioning the quote at bottom right on the last page */
+.last-page .quote-container {
+  bottom: 10px;
+  right: 10px;
+  top: auto;  /* Remove top positioning on the last page */
+}
 
   </style>
 </head>
 <body>
 
   <header>
+	  <div class="quote-container">
+  <p class="quote">Matthew 19:5–6: 5 and said, ‘Therefore a man shall leave his father and his mother and hold fast to his wife, and the two shall become one flesh’? 6 So they are no longer two but one flesh. What therefore God has joined together, let not man separate.”</p>
+</div>
     <h1> Welcome to the wedding</h1>
     <h1>O & S </h1>
     <p style="font-weight: bold; color: var(--green);font-style: italic;">"We found our happily ever after, and we want you to be a part of it".</p>
@@ -371,7 +402,7 @@ nav a:hover {
   </footer>
 
   <!-- Bible Verse Quote at the bottom right -->
-  <div class="quote">
+  <div class="last-page">
     <p><strong>Matthew 19:5–6:</strong> 5 and said, ‘Therefore a man shall leave his father and his mother and hold fast to his wife, and the two shall become one flesh’? 6 So they are no longer two but one flesh. What therefore God has joined together, let not man separate.”</p>
   </div>
 
